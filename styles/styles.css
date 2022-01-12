@@ -139,13 +139,20 @@ hr{
         display: flex;
         padding: 10px;
         flex-direction: column;
+        border-radius: 8px;
         box-shadow: 2px 5px 12px rgba(172, 177, 113, 0.747);
     }
     .blogs{
         grid-template-columns: 1fr;
     }
+    .blog{
+        display: flex;
+        flex-direction: column;
+        border-bottom:  2px solid #D1D1D1;
+    }
     .courses{
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 }
