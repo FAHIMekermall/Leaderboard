@@ -4,18 +4,24 @@
 /* ---------------------------common styles--------------------------- */
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 0;
     background-color: rgba(243, 241, 255, 1);
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .container{
     background-color: white;
     padding: 30px;
     border-radius: 5px;
     width: 870px;
+    margin-top: 21px;
+}
+.title {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 16px 16px 0px 0px;
 }
 .top-header{
     color: rgba(86, 46, 255, 1);
@@ -64,11 +70,6 @@ hr{
     margin-left: 16px;
     align-items: center;
 }
-.blog-title {
-    font-weight: 500;
-    font-size: 20px;
-    margin: 16px 16px 0px 0px;
-}
 .blog-author{
     margin: 0;
     color: #9F9F9F;
@@ -78,4 +79,73 @@ hr{
     text-decoration: none;
     color: 
     rgba(86, 46, 255, 1);
+}
+/* ----------------top blog style end ---------------- */
+/*----------------= course style start =--------------- */
+.courses{
+    display: flex;
+    justify-content: space-between;
+}
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course{
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    padding-top: 13px;
+    padding-left: 11px;
+    border-radius: 10px;
+}
+.course-author{
+    color: rgba(237, 107, 79, 1);
+    font-size: 16.6px;
+}
+.course-rating{
+    color: #FFC014;
+    font-size: 14px;
+}
+.gray-font{
+    color: rgba(162, 162, 162, 1);
+    margin-left: 10px;
+}
+.fa-star.empty{
+    color:#AEAEAE;
+}
+.time{
+    color: rgba(255, 74, 96, 1);
+    background-color: rgba(255, 228, 232, 1);
+    padding: 4px;
+    border-radius: 14px;
+    margin-left: 25px;
+}
+.fa-clock{
+    margin-right: 5px;
+}
+
+/* media query */
+/* mobile device */
+@media only screen and (max-width: 688px) {
+    .top-header{
+        text-align: center;
+    }
+    .container{
+        width: 100%;
+    }    
+    .players{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .player{
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        box-shadow: 2px 5px 12px rgba(172, 177, 113, 0.747);
+    }
+    .blogs{
+        grid-template-columns: 1fr;
+    }
+    .courses{
+        display: flex;
+        flex-direction: column;
+    }
 }
