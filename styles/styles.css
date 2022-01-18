@@ -41,6 +41,7 @@ main{
     margin-bottom: 22px;
 }
 .player img{
+    display: grid;
     width: 56px;
     height: 56px;
 }
